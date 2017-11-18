@@ -146,7 +146,7 @@ module top(
 	output [14:0]      fpga_ddr3_a,
 	output [2:0]       fpga_ddr3_ba,
 	output             fpga_ddr3_ck,
-	output             fpga_ddr3_ck_n,
+// output             fpga_ddr3_ck_n,
 	output             fpga_ddr3_cke,
 	output             fpga_ddr3_cs_n,
 	output             fpga_ddr3_ras_n,
@@ -208,15 +208,15 @@ module top(
     inout              hsmc_i2c_sda,   // I2C Data
     input  [16:0]      hsmc_rx,        // HSMC Receive pairs
 //  input  [16:0]      hsmc_rx_n,      
-    output [16:0]      hsmc_tx,        // HSMC Transmit pairs
+    output [16:0]      hsmc_tx         // HSMC Transmit pairs
 //  output [16:0]      hsmc_tx_n,      
     
 // HSMC Transceivers
-    input              gxb_ref_clk,    // Reference clock for transceiver
+//  input              gxb_ref_clk,    // Reference clock for transceiver
 //  input              gxb_ref_clk_n,
-    input  [7:0]       gxb_rx,         // Transceiver receiver pairs
+//  input  [7:0]       gxb_rx,         // Transceiver receiver pairs
 //  input  [7:0]       gxb_tx_n,
-    output [7:0]       gxb_tx          // Transceiver transmit pairs
+//  output [7:0]       gxb_tx          // Transceiver transmit pairs
 //  output [7:0]       gxb_tx_n,
 
 );
