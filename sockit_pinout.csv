@@ -1,0 +1,395 @@
+Net Label,Pin,I/O Standard
+aud_adcdat,AC27,3.3-V LVCMOS
+aud_adclrck,AG30,3.3-V LVCMOS
+aud_bclk,AE7,3.3-V LVCMOS
+aud_dacdat,AG3,3.3-V LVCMOS
+aud_daclrck,AH4,3.3-V LVCMOS
+aud_i2c_scl,AH30,3.3-V LVCMOS
+aud_i2c_sda,AF30,3.3-V LVCMOS
+aud_mute,AD26,3.3-V LVCMOS
+aud_xck,AC9,3.3-V LVCMOS
+clk_50m_fpga,Y26,HSMC_VCCIO
+fan_ctrl,AG27,3.3-V LVCMOS
+fpga_ddr3_a[0],AJ14,SSTL-15 CLASS I
+fpga_ddr3_a[1],AK14,SSTL-15 CLASS I
+fpga_ddr3_a[10],AJ9,SSTL-15 CLASS I
+fpga_ddr3_a[11],AK9,SSTL-15 CLASS I
+fpga_ddr3_a[12],AK7,SSTL-15 CLASS I
+fpga_ddr3_a[13],AK8,SSTL-15 CLASS I
+fpga_ddr3_a[14],AG12,SSTL-15 CLASS I
+fpga_ddr3_a[2],AH12,SSTL-15 CLASS I
+fpga_ddr3_a[3],AJ12,SSTL-15 CLASS I
+fpga_ddr3_a[4],AG15,SSTL-15 CLASS I
+fpga_ddr3_a[5],AH15,SSTL-15 CLASS I
+fpga_ddr3_a[6],AK12,SSTL-15 CLASS I
+fpga_ddr3_a[7],AK13,SSTL-15 CLASS I
+fpga_ddr3_a[8],AH13,SSTL-15 CLASS I
+fpga_ddr3_a[9],AH14,SSTL-15 CLASS I
+fpga_ddr3_ba[0],AH10,SSTL-15 CLASS I
+fpga_ddr3_ba[1],AJ11,SSTL-15 CLASS I
+fpga_ddr3_ba[2],AK11,SSTL-15 CLASS I
+fpga_ddr3_cas_n,AH7,SSTL-15 CLASS I
+fpga_ddr3_ck,AA14,DIFFERENTIAL 1.5-V SSTL CLASS I
+fpga_ddr3_ck_n,AA15,DIFFERENTIAL 1.5-V SSTL CLASS I
+fpga_ddr3_cke,AJ21,SSTL-15 CLASS I
+fpga_ddr3_cs_n,AB15,SSTL-15 CLASS I
+fpga_ddr3_dm[0],AH17,SSTL-15 CLASS I
+fpga_ddr3_dm[1],AG23,SSTL-15 CLASS I
+fpga_ddr3_dm[2],AK23,SSTL-15 CLASS I
+fpga_ddr3_dm[3],AJ27,SSTL-15 CLASS I
+fpga_ddr3_dq[0],AF18,SSTL-15 CLASS I
+fpga_ddr3_dq[1],AE17,SSTL-15 CLASS I
+fpga_ddr3_dq[10],AG18,SSTL-15 CLASS I
+fpga_ddr3_dq[11],AK19,SSTL-15 CLASS I
+fpga_ddr3_dq[12],AG20,SSTL-15 CLASS I
+fpga_ddr3_dq[13],AF19,SSTL-15 CLASS I
+fpga_ddr3_dq[14],AJ20,SSTL-15 CLASS I
+fpga_ddr3_dq[15],AH24,SSTL-15 CLASS I
+fpga_ddr3_dq[16],AE19,SSTL-15 CLASS I
+fpga_ddr3_dq[17],AE18,SSTL-15 CLASS I
+fpga_ddr3_dq[18],AG22,SSTL-15 CLASS I
+fpga_ddr3_dq[19],AK22,SSTL-15 CLASS I
+fpga_ddr3_dq[2],AG16,SSTL-15 CLASS I
+fpga_ddr3_dq[20],AF21,SSTL-15 CLASS I
+fpga_ddr3_dq[21],AF20,SSTL-15 CLASS I
+fpga_ddr3_dq[22],AH23,SSTL-15 CLASS I
+fpga_ddr3_dq[23],AK24,SSTL-15 CLASS I
+fpga_ddr3_dq[24],AF24,SSTL-15 CLASS I
+fpga_ddr3_dq[25],AF23,SSTL-15 CLASS I
+fpga_ddr3_dq[26],AJ24,SSTL-15 CLASS I
+fpga_ddr3_dq[27],AK26,SSTL-15 CLASS I
+fpga_ddr3_dq[28],AE23,SSTL-15 CLASS I
+fpga_ddr3_dq[29],AE22,SSTL-15 CLASS I
+fpga_ddr3_dq[3],AF16,SSTL-15 CLASS I
+fpga_ddr3_dq[30],AG25,SSTL-15 CLASS I
+fpga_ddr3_dq[31],AK27,SSTL-15 CLASS I
+fpga_ddr3_dq[4],AH20,SSTL-15 CLASS I
+fpga_ddr3_dq[5],AG21,SSTL-15 CLASS I
+fpga_ddr3_dq[6],AJ16,SSTL-15 CLASS I
+fpga_ddr3_dq[7],AH18,SSTL-15 CLASS I
+fpga_ddr3_dq[8],AK18,SSTL-15 CLASS I
+fpga_ddr3_dq[9],AJ17,SSTL-15 CLASS I
+fpga_ddr3_dqs_n[0],W16,DIFFERENTIAL 1.5-V SSTL CLASS I
+fpga_ddr3_dqs_n[1],W17,DIFFERENTIAL 1.5-V SSTL CLASS I
+fpga_ddr3_dqs_n[2],AA18,DIFFERENTIAL 1.5-V SSTL CLASS I
+fpga_ddr3_dqs_n[3],AD19,DIFFERENTIAL 1.5-V SSTL CLASS I
+fpga_ddr3_dqs[0],V16,DIFFERENTIAL 1.5-V SSTL CLASS I
+fpga_ddr3_dqs[1],V17,DIFFERENTIAL 1.5-V SSTL CLASS I
+fpga_ddr3_dqs[2],Y17,DIFFERENTIAL 1.5-V SSTL CLASS I
+fpga_ddr3_dqs[3],AC20,DIFFERENTIAL 1.5-V SSTL CLASS I
+fpga_ddr3_oct_rzqin,AG17,1.5V
+fpga_ddr3_odt,AE16,SSTL-15 CLASS I
+fpga_ddr3_ras_n,AH8,SSTL-15 CLASS I
+fpga_ddr3_reset_n,AK21,SSTL-15 CLASS I
+fpga_ddr3_we_n,AJ6,SSTL-15 CLASS I
+fpga_rst_n,AD27,3.3-V LVCMOS
+gxb_ref_clk,P9,1.8V
+gxb_ref_clk_n,P8,1.8V
+gxb_rx[0],AE2,1.5-V PCML
+gxb_rx[0]_n,AE1,1.5-V PCML
+gxb_rx[1],AC2,1.5-V PCML
+gxb_rx[1]_n,AC1,1.5-V PCML
+gxb_rx[2],AA2,1.5-V PCML
+gxb_rx[2]_n,AA1,1.5-V PCML
+gxb_rx[3],W2,1.5-V PCML
+gxb_rx[3]_n,W1,1.5-V PCML
+gxb_rx[4],U2,1.5-V PCML
+gxb_rx[4]_n,U1,1.5-V PCML
+gxb_rx[5],R2,1.5-V PCML
+gxb_rx[5]_n,R1,1.5-V PCML
+gxb_rx[6],N2,1.5-V PCML
+gxb_rx[6]_n,N1,1.5-V PCML
+gxb_rx[7],J2,1.5-V PCML
+gxb_rx[7]_n,J1,1.5-V PCML
+gxb_tx[0],AD4,1.5-V PCML
+gxb_tx[0]_n,AD3,1.5-V PCML
+gxb_tx[1],AB4,1.5-V PCML
+gxb_tx[1]_n,AB3,1.5-V PCML
+gxb_tx[2],Y4,1.5-V PCML
+gxb_tx[2]_n,Y3,1.5-V PCML
+gxb_tx[3],V4,1.5-V PCML
+gxb_tx[3]_n,V3,1.5-V PCML
+gxb_tx[4],T4,1.5-V PCML
+gxb_tx[4]_n,T3,1.5-V PCML
+gxb_tx[5],P4,1.5-V PCML
+gxb_tx[5]_n,P3,1.5-V PCML
+gxb_tx[6],M4,1.5-V PCML
+gxb_tx[6]_n,M3,1.5-V PCML
+gxb_tx[7],H4,1.5-V PCML
+gxb_tx[7]_n,H3,1.5-V PCML
+hps_ddr3_mem_a[0],F26,SSTL-15 CLASS I
+hps_ddr3_mem_a[1],G30,SSTL-15 CLASS I
+hps_ddr3_mem_a[10],D29,SSTL-15 CLASS I
+hps_ddr3_mem_a[11],C30,SSTL-15 CLASS I
+hps_ddr3_mem_a[12],B30,SSTL-15 CLASS I
+hps_ddr3_mem_a[13],C29,SSTL-15 CLASS I
+hps_ddr3_mem_a[14],H25,SSTL-15 CLASS I
+hps_ddr3_mem_a[2],F28,SSTL-15 CLASS I
+hps_ddr3_mem_a[3],F30,SSTL-15 CLASS I
+hps_ddr3_mem_a[4],J25,SSTL-15 CLASS I
+hps_ddr3_mem_a[5],J27,SSTL-15 CLASS I
+hps_ddr3_mem_a[6],F29,SSTL-15 CLASS I
+hps_ddr3_mem_a[7],E28,SSTL-15 CLASS I
+hps_ddr3_mem_a[8],H27,SSTL-15 CLASS I
+hps_ddr3_mem_a[9],G26,SSTL-15 CLASS I
+hps_ddr3_mem_ba[0],E29,SSTL-15 CLASS I
+hps_ddr3_mem_ba[1],J24,SSTL-15 CLASS I
+hps_ddr3_mem_ba[2],J23,SSTL-15 CLASS I
+hps_ddr3_mem_cas_n,D30,SSTL-15 CLASS I
+hps_ddr3_mem_ck,M23,DIFFERENTIAL 1.5-V SSTL CLASS I
+hps_ddr3_mem_ck_n,L23,DIFFERENTIAL 1.5-V SSTL CLASS I
+hps_ddr3_mem_cke,L29,SSTL-15 CLASS I
+hps_ddr3_mem_cs_n,H24,SSTL-15 CLASS I
+hps_ddr3_mem_dm[0],K28,SSTL-15 CLASS I
+hps_ddr3_mem_dm[1],M28,SSTL-15 CLASS I
+hps_ddr3_mem_dm[2],R28,SSTL-15 CLASS I
+hps_ddr3_mem_dm[3],W30,SSTL-15 CLASS I
+hps_ddr3_mem_dq[0],K23,SSTL-15 CLASS I
+hps_ddr3_mem_dq[1],K22,SSTL-15 CLASS I
+hps_ddr3_mem_dq[10],K29,SSTL-15 CLASS I
+hps_ddr3_mem_dq[11],K27,SSTL-15 CLASS I
+hps_ddr3_mem_dq[12],M26,SSTL-15 CLASS I
+hps_ddr3_mem_dq[13],M27,SSTL-15 CLASS I
+hps_ddr3_mem_dq[14],L28,SSTL-15 CLASS I
+hps_ddr3_mem_dq[15],M30,SSTL-15 CLASS I
+hps_ddr3_mem_dq[16],U26,SSTL-15 CLASS I
+hps_ddr3_mem_dq[17],T26,SSTL-15 CLASS I
+hps_ddr3_mem_dq[18],N29,SSTL-15 CLASS I
+hps_ddr3_mem_dq[19],N28,SSTL-15 CLASS I
+hps_ddr3_mem_dq[2],H30,SSTL-15 CLASS I
+hps_ddr3_mem_dq[20],P26,SSTL-15 CLASS I
+hps_ddr3_mem_dq[21],P27,SSTL-15 CLASS I
+hps_ddr3_mem_dq[22],N27,SSTL-15 CLASS I
+hps_ddr3_mem_dq[23],R29,SSTL-15 CLASS I
+hps_ddr3_mem_dq[24],P24,SSTL-15 CLASS I
+hps_ddr3_mem_dq[25],P25,SSTL-15 CLASS I
+hps_ddr3_mem_dq[26],T29,SSTL-15 CLASS I
+hps_ddr3_mem_dq[27],T28,SSTL-15 CLASS I
+hps_ddr3_mem_dq[28],R27,SSTL-15 CLASS I
+hps_ddr3_mem_dq[29],R26,SSTL-15 CLASS I
+hps_ddr3_mem_dq[3],G28,SSTL-15 CLASS I
+hps_ddr3_mem_dq[30],V30,SSTL-15 CLASS I
+hps_ddr3_mem_dq[31],W29,SSTL-15 CLASS I
+hps_ddr3_mem_dq[4],L25,SSTL-15 CLASS I
+hps_ddr3_mem_dq[5],L24,SSTL-15 CLASS I
+hps_ddr3_mem_dq[6],J30,SSTL-15 CLASS I
+hps_ddr3_mem_dq[7],J29,SSTL-15 CLASS I
+hps_ddr3_mem_dq[8],K26,SSTL-15 CLASS I
+hps_ddr3_mem_dq[9],L26,SSTL-15 CLASS I
+hps_ddr3_mem_dqs_n[0],M19,DIFFERENTIAL 1.5-V SSTL CLASS I
+hps_ddr3_mem_dqs_n[1],N24,DIFFERENTIAL 1.5-V SSTL CLASS I
+hps_ddr3_mem_dqs_n[2],R18,DIFFERENTIAL 1.5-V SSTL CLASS I
+hps_ddr3_mem_dqs_n[3],R21,DIFFERENTIAL 1.5-V SSTL CLASS I
+hps_ddr3_mem_dqs[0],N18,DIFFERENTIAL 1.5-V SSTL CLASS I
+hps_ddr3_mem_dqs[1],N25,DIFFERENTIAL 1.5-V SSTL CLASS I
+hps_ddr3_mem_dqs[2],R19,DIFFERENTIAL 1.5-V SSTL CLASS I
+hps_ddr3_mem_dqs[3],R22,DIFFERENTIAL 1.5-V SSTL CLASS I
+hps_ddr3_mem_oct_rzqin,D27,1.5V
+hps_ddr3_mem_odt,H28,SSTL-15 CLASS I
+hps_ddr3_mem_ras_n,E27,SSTL-15 CLASS I
+hps_ddr3_mem_reset_n,P30,SSTL-15 CLASS I
+hps_ddr3_mem_we_n,C28,SSTL-15 CLASS I
+hps_emac1_MDC,B21,3.3-V LVCMOS
+hps_emac1_MDIO,E21,3.3-V LVCMOS
+hps_emac1_RX_CLK,G20,3.3-V LVCMOS
+hps_emac1_RX_CTL,K17,3.3-V LVCMOS
+hps_emac1_RXD[0],A21,3.3-V LVCMOS
+hps_emac1_RXD[1],B20,3.3-V LVCMOS
+hps_emac1_RXD[2],B18,3.3-V LVCMOS
+hps_emac1_RXD[3],D21,3.3-V LVCMOS
+hps_emac1_TX_CLK,H19,3.3-V LVCMOS
+hps_emac1_TX_CTL,A20,3.3-V LVCMOS
+hps_emac1_TXD[0],F20,3.3-V LVCMOS
+hps_emac1_TXD[1],J19,3.3-V LVCMOS
+hps_emac1_TXD[2],F21,3.3-V LVCMOS
+hps_emac1_TXD[3],F19,3.3-V LVCMOS
+hps_gpio_GPI10,T21,1.5V
+hps_gpio_GPI11,U20,1.5V
+hps_gpio_GPI4,N30,1.5V
+hps_gpio_GPI5,P29,1.5V
+hps_gpio_GPI6,P22,1.5V
+hps_gpio_GPI7,V20,1.5V
+hps_gpio_GPI8,T30,1.5V
+hps_gpio_GPI9,U28,1.5V
+hps_gpio_GPIO0,F16,3.3-V LVCMOS
+hps_gpio_GPIO35,C19,3.3-V LVCMOS
+hps_gpio_GPIO40,H17,3.3-V LVCMOS
+hps_gpio_GPIO48,B26,3.3-V LVCMOS
+hps_gpio_GPIO53,A24,3.3-V LVCMOS
+hps_gpio_GPIO54,G21,3.3-V LVCMOS
+hps_gpio_GPIO55,C24,3.3-V LVCMOS
+hps_gpio_GPIO56,E23,3.3-V LVCMOS
+hps_gpio_GPIO61,B22,3.3-V LVCMOS
+hps_gpio_GPIO62,G22,3.3-V LVCMOS
+hps_gpio_GPIO9,B15,3.3-V LVCMOS
+hps_i2c1_SCL,H23,3.3-V LVCMOS
+hps_i2c1_SDA,A25,3.3-V LVCMOS
+hps_qspi_CLK,D19,3.3-V LVCMOS
+hps_qspi_IO[0],C20,3.3-V LVCMOS
+hps_qspi_IO[1],H18,3.3-V LVCMOS
+hps_qspi_IO[2],A19,3.3-V LVCMOS
+hps_qspi_IO[3],E19,3.3-V LVCMOS
+hps_qspi_SS0,A18,3.3-V LVCMOS
+hps_sdio_CLK,A16,3.3-V LVCMOS
+hps_sdio_CMD,F18,3.3-V LVCMOS
+hps_sdio_D[0],G18,3.3-V LVCMOS
+hps_sdio_D[1],C17,3.3-V LVCMOS
+hps_sdio_D[2],D17,3.3-V LVCMOS
+hps_sdio_D[3],B16,3.3-V LVCMOS
+hps_spim0_CLK,A23,3.3-V LVCMOS
+hps_spim0_MISO,B23,3.3-V LVCMOS
+hps_spim0_MOSI,C22,3.3-V LVCMOS
+hps_spim0_SS0,H20,3.3-V LVCMOS
+hps_spim1_CLK,C23,3.3-V LVCMOS
+hps_spim1_MISO,E24,3.3-V LVCMOS
+hps_spim1_MOSI,D22,3.3-V LVCMOS
+hps_spim1_SS0,D24,3.3-V LVCMOS
+hps_uart0_RX,B25,3.3-V LVCMOS
+hps_uart0_TX,C25,3.3-V LVCMOS
+hps_usb1_CLK,N16,3.3-V LVCMOS
+hps_usb1_DIR,E14,3.3-V LVCMOS
+hps_usb1_D[0],E16,3.3-V LVCMOS
+hps_usb1_D[1],G16,3.3-V LVCMOS
+hps_usb1_D[2],D16,3.3-V LVCMOS
+hps_usb1_D[3],D14,3.3-V LVCMOS
+hps_usb1_D[4],A15,3.3-V LVCMOS
+hps_usb1_D[5],C14,3.3-V LVCMOS
+hps_usb1_D[6],D15,3.3-V LVCMOS
+hps_usb1_D[7],M17,3.3-V LVCMOS
+hps_usb1_NXT,A14,3.3-V LVCMOS
+hps_usb1_STP,C15,3.3-V LVCMOS
+hsmc_clkin0,J14,HSMC_VCCIO
+hsmc_clkin1,AA26,HSMC_VCCIO
+hsmc_clkin1_n,AB27,HSMC_VCCIO
+hsmc_clkin2,H15,HSMC_VCCIO
+hsmc_clkin2_n,G15,HSMC_VCCIO
+hsmc_clkout0,AD29,HSMC_VCCIO
+hsmc_clkout1,E7,HSMC_VCCIO
+hsmc_clkout1_n,E6,HSMC_VCCIO
+hsmc_clkout2,A11,HSMC_VCCIO
+hsmc_clkout2_n,A10,HSMC_VCCIO
+hsmc_d[0],C10,HSMC_VCCIO
+hsmc_d[1],H13,HSMC_VCCIO
+hsmc_d[2],C9,HSMC_VCCIO
+hsmc_d[3],H12,HSMC_VCCIO
+hsmc_i2c_scl,AA28,HSMC_VCCIO
+hsmc_i2c_sda,AE29,HSMC_VCCIO
+hsmc_rx[0],G12,HSMC_VCCIO
+hsmc_rx[0]_n,G11,HSMC_VCCIO
+hsmc_rx[1],K12,HSMC_VCCIO
+hsmc_rx[1]_n,J12,HSMC_VCCIO
+hsmc_rx[10],E9,HSMC_VCCIO
+hsmc_rx[10]_n,D9,HSMC_VCCIO
+hsmc_rx[11],E12,HSMC_VCCIO
+hsmc_rx[11]_n,D12,HSMC_VCCIO
+hsmc_rx[12],D11,HSMC_VCCIO
+hsmc_rx[12]_n,D10,HSMC_VCCIO
+hsmc_rx[13],C13,HSMC_VCCIO
+hsmc_rx[13]_n,B12,HSMC_VCCIO
+hsmc_rx[14],F13,HSMC_VCCIO
+hsmc_rx[14]_n,E13,HSMC_VCCIO
+hsmc_rx[15],H14,HSMC_VCCIO
+hsmc_rx[15]_n,G13,HSMC_VCCIO
+hsmc_rx[16],F15,HSMC_VCCIO
+hsmc_rx[16]_n,F14,HSMC_VCCIO
+hsmc_rx[2],G10,HSMC_VCCIO
+hsmc_rx[2]_n,F10,HSMC_VCCIO
+hsmc_rx[3],J10,HSMC_VCCIO
+hsmc_rx[3]_n,J9,HSMC_VCCIO
+hsmc_rx[4],K7,HSMC_VCCIO
+hsmc_rx[4]_n,K8,HSMC_VCCIO
+hsmc_rx[5],J7,HSMC_VCCIO
+hsmc_rx[5]_n,H7,HSMC_VCCIO
+hsmc_rx[6],H8,HSMC_VCCIO
+hsmc_rx[6]_n,G8,HSMC_VCCIO
+hsmc_rx[7],F9,HSMC_VCCIO
+hsmc_rx[7]_n,F8,HSMC_VCCIO
+hsmc_rx[8],F11,HSMC_VCCIO
+hsmc_rx[8]_n,E11,HSMC_VCCIO
+hsmc_rx[9],B6,HSMC_VCCIO
+hsmc_rx[9]_n,B5,HSMC_VCCIO
+hsmc_tx[0],A9,HSMC_VCCIO
+hsmc_tx[0]_n,A8,HSMC_VCCIO
+hsmc_tx[1],E8,HSMC_VCCIO
+hsmc_tx[1]_n,D7,HSMC_VCCIO
+hsmc_tx[10],B2,HSMC_VCCIO
+hsmc_tx[10]_n,B1,HSMC_VCCIO
+hsmc_tx[11],A4,HSMC_VCCIO
+hsmc_tx[11]_n,A3,HSMC_VCCIO
+hsmc_tx[12],A6,HSMC_VCCIO
+hsmc_tx[12]_n,A5,HSMC_VCCIO
+hsmc_tx[13],C7,HSMC_VCCIO
+hsmc_tx[13]_n,B7,HSMC_VCCIO
+hsmc_tx[14],C8,HSMC_VCCIO
+hsmc_tx[14]_n,B8,HSMC_VCCIO
+hsmc_tx[15],C12,HSMC_VCCIO
+hsmc_tx[15]_n,B11,HSMC_VCCIO
+hsmc_tx[16],B13,HSMC_VCCIO
+hsmc_tx[16]_n,A13,HSMC_VCCIO
+hsmc_tx[2],G7,HSMC_VCCIO
+hsmc_tx[2]_n,F6,HSMC_VCCIO
+hsmc_tx[3],D6,HSMC_VCCIO
+hsmc_tx[3]_n,C5,HSMC_VCCIO
+hsmc_tx[4],D5,HSMC_VCCIO
+hsmc_tx[4]_n,C4,HSMC_VCCIO
+hsmc_tx[5],E3,HSMC_VCCIO
+hsmc_tx[5]_n,E2,HSMC_VCCIO
+hsmc_tx[6],E4,HSMC_VCCIO
+hsmc_tx[6]_n,D4,HSMC_VCCIO
+hsmc_tx[7],C3,HSMC_VCCIO
+hsmc_tx[7]_n,B3,HSMC_VCCIO
+hsmc_tx[8],E1,HSMC_VCCIO
+hsmc_tx[8]_n,D1,HSMC_VCCIO
+hsmc_tx[9],D2,HSMC_VCCIO
+hsmc_tx[9]_n,C20,HSMC_VCCIO
+irda_rx,AH2,3.3-V LVCMOS
+si5338_clk0,K14,HSMC_VCCIO
+si5338_clk1,AF14,1.5V
+si5338_clk2,AA16,1.5V
+si5338_i2c_scl,AE26,3.3-V LVCMOS
+si5338_i2c_sda,AJ29,3.3-V LVCMOS
+temp_clk,AF9,3.3-V LVCMOS
+temp_cs_n,AF8,3.3-V LVCMOS
+temp_miso,AG7,3.3-V LVCMOS
+temp_mosi,AG1,3.3-V LVCMOS
+user_dipsw_fpga[0],W25,HSMC_VCCIO
+user_dipsw_fpga[1],V25,HSMC_VCCIO
+user_dipsw_fpga[2],AC28,HSMC_VCCIO
+user_dipsw_fpga[3],AC29,HSMC_VCCIO
+user_led_fpga[0],AF10,3.3-V LVCMOS
+user_led_fpga[1],AD10,3.3-V LVCMOS
+user_led_fpga[2],AE11,3.3-V LVCMOS
+user_led_fpga[3],AD7,3.3-V LVCMOS
+user_pb_fpga[0],AE9,3.3-V LVCMOS
+user_pb_fpga[1],AE12,3.3-V LVCMOS
+user_pb_fpga[2],AD9,3.3-V LVCMOS
+user_pb_fpga[3],AD11,3.3-V LVCMOS
+vga_b[0],AE28,3.3-V LVCMOS
+vga_b[1],Y23,3.3-V LVCMOS
+vga_b[2],Y24,3.3-V LVCMOS
+vga_b[3],AG28,3.3-V LVCMOS
+vga_b[4],AF28,3.3-V LVCMOS
+vga_b[5],V23,3.3-V LVCMOS
+vga_b[6],W24,3.3-V LVCMOS
+vga_b[7],AF29,3.3-V LVCMOS
+vga_blank_n,AH3,3.3-V LVCMOS
+vga_clk,W20,3.3-V LVCMOS
+vga_g[0],Y21,3.3-V LVCMOS
+vga_g[1],AA25,3.3-V LVCMOS
+vga_g[2],AB26,3.3-V LVCMOS
+vga_g[3],AB22,3.3-V LVCMOS
+vga_g[4],AB23,3.3-V LVCMOS
+vga_g[5],AA24,3.3-V LVCMOS
+vga_g[6],AB25,3.3-V LVCMOS
+vga_g[7],AE27,3.3-V LVCMOS
+vga_hsync,AD12,3.3-V LVCMOS
+vga_r[0],AG5,3.3-V LVCMOS
+vga_r[1],AA12,3.3-V LVCMOS
+vga_r[2],AB12,3.3-V LVCMOS
+vga_r[3],AF6,3.3-V LVCMOS
+vga_r[4],AG6,3.3-V LVCMOS
+vga_r[5],AJ2,3.3-V LVCMOS
+vga_r[6],AH5,3.3-V LVCMOS
+vga_r[7],AJ1,3.3-V LVCMOS
+vga_sync_n,AG2,3.3-V LVCMOS
+vga_vsync,AC12,3.3-V LVCMOS

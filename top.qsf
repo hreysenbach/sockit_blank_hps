@@ -1,0 +1,1188 @@
+# -------------------------------------------------------------------------- #
+
+
+
+#
+
+
+
+# Copyright (C) 2016  Intel Corporation. All rights reserved.
+
+
+
+# Your use of Intel Corporation's design tools, logic functions 
+
+
+
+# and other software and tools, and its AMPP partner logic 
+
+
+
+# functions, and any output files from any of the foregoing 
+
+
+
+# (including device programming or simulation files), and any 
+
+
+
+# associated documentation or information are expressly subject 
+
+
+
+# to the terms and conditions of the Intel Program License 
+
+
+
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+
+
+
+# the Intel MegaCore Function License Agreement, or other 
+
+
+
+# applicable license agreement, including, without limitation, 
+
+
+
+# that your use is for the sole purpose of programming logic 
+
+
+
+# devices manufactured by Intel and sold by Intel or its 
+
+
+
+# authorized distributors.  Please refer to the applicable 
+
+
+
+# agreement for further details.
+
+
+
+#
+
+
+
+# -------------------------------------------------------------------------- #
+
+
+
+#
+
+
+
+# Quartus Prime
+
+
+
+# Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+
+# Date created = 20:33:32  March 15, 2017
+
+
+
+#
+
+
+
+# -------------------------------------------------------------------------- #
+
+
+
+#
+
+
+
+# Notes:
+
+
+
+#
+
+
+
+# 1) The default values for assignments are stored in the file:
+
+
+
+#		top_assignment_defaults.qdf
+
+
+
+#    If this file doesn't exist, see file:
+
+
+
+#		assignment_defaults.qdf
+
+
+
+#
+
+
+
+# 2) Altera recommends that you do not modify this file. This
+
+
+
+#    file is updated automatically by the Quartus Prime software
+
+
+
+#    and any changes you make may be lost or overwritten.
+
+
+
+#
+
+
+
+# -------------------------------------------------------------------------- #
+
+
+
+
+
+
+
+
+
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+
+set_global_assignment -name DEVICE 5CSXFC6D6F31C6
+
+set_global_assignment -name TOP_LEVEL_ENTITY top
+
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.1.0
+
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:33:32  MARCH 15, 2017"
+
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Standard Edition"
+
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 896
+
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6_H6
+
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name QIP_FILE soc_system/synthesis/soc_system.qip
+set_global_assignment -name VERILOG_FILE verilog/top.v
+
+
+set_location_assignment PIN_AC27 -to aud_adcdat
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to aud_adcdat
+set_location_assignment PIN_AG30 -to aud_adclrck
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to aud_adclrck
+set_location_assignment PIN_AE7 -to aud_bclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to aud_bclk
+set_location_assignment PIN_AG3 -to aud_dacdat
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to aud_dacdat
+set_location_assignment PIN_AH4 -to aud_daclrck
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to aud_daclrck
+set_location_assignment PIN_AH30 -to aud_i2c_scl
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to aud_i2c_scl
+set_location_assignment PIN_AF30 -to aud_i2c_sda
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to aud_i2c_sda
+set_location_assignment PIN_AD26 -to aud_mute
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to aud_mute
+set_location_assignment PIN_AC9 -to aud_xck
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to aud_xck
+set_location_assignment PIN_Y26 -to clk_50m_fpga
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to clk_50m_fpga
+set_location_assignment PIN_AG27 -to fan_ctrl
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to fan_ctrl
+set_location_assignment PIN_AJ14 -to fpga_ddr3_a[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[0]
+set_location_assignment PIN_AK14 -to fpga_ddr3_a[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[1]
+set_location_assignment PIN_AJ9 -to fpga_ddr3_a[10]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[10]
+set_location_assignment PIN_AK9 -to fpga_ddr3_a[11]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[11]
+set_location_assignment PIN_AK7 -to fpga_ddr3_a[12]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[12]
+set_location_assignment PIN_AK8 -to fpga_ddr3_a[13]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[13]
+set_location_assignment PIN_AG12 -to fpga_ddr3_a[14]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[14]
+set_location_assignment PIN_AH12 -to fpga_ddr3_a[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[2]
+set_location_assignment PIN_AJ12 -to fpga_ddr3_a[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[3]
+set_location_assignment PIN_AG15 -to fpga_ddr3_a[4]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[4]
+set_location_assignment PIN_AH15 -to fpga_ddr3_a[5]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[5]
+set_location_assignment PIN_AK12 -to fpga_ddr3_a[6]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[6]
+set_location_assignment PIN_AK13 -to fpga_ddr3_a[7]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[7]
+set_location_assignment PIN_AH13 -to fpga_ddr3_a[8]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[8]
+set_location_assignment PIN_AH14 -to fpga_ddr3_a[9]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_a[9]
+set_location_assignment PIN_AH10 -to fpga_ddr3_ba[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_ba[0]
+set_location_assignment PIN_AJ11 -to fpga_ddr3_ba[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_ba[1]
+set_location_assignment PIN_AK11 -to fpga_ddr3_ba[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_ba[2]
+set_location_assignment PIN_AH7 -to fpga_ddr3_cas_n
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_cas_n
+set_location_assignment PIN_AA14 -to fpga_ddr3_ck
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to fpga_ddr3_ck
+set_location_assignment PIN_AA15 -to fpga_ddr3_ck_n
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to fpga_ddr3_ck_n
+set_location_assignment PIN_AJ21 -to fpga_ddr3_cke
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_cke
+set_location_assignment PIN_AB15 -to fpga_ddr3_cs_n
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_cs_n
+set_location_assignment PIN_AH17 -to fpga_ddr3_dm[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dm[0]
+set_location_assignment PIN_AG23 -to fpga_ddr3_dm[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dm[1]
+set_location_assignment PIN_AK23 -to fpga_ddr3_dm[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dm[2]
+set_location_assignment PIN_AJ27 -to fpga_ddr3_dm[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dm[3]
+set_location_assignment PIN_AF18 -to fpga_ddr3_dq[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[0]
+set_location_assignment PIN_AE17 -to fpga_ddr3_dq[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[1]
+set_location_assignment PIN_AG18 -to fpga_ddr3_dq[10]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[10]
+set_location_assignment PIN_AK19 -to fpga_ddr3_dq[11]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[11]
+set_location_assignment PIN_AG20 -to fpga_ddr3_dq[12]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[12]
+set_location_assignment PIN_AF19 -to fpga_ddr3_dq[13]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[13]
+set_location_assignment PIN_AJ20 -to fpga_ddr3_dq[14]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[14]
+set_location_assignment PIN_AH24 -to fpga_ddr3_dq[15]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[15]
+set_location_assignment PIN_AE19 -to fpga_ddr3_dq[16]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[16]
+set_location_assignment PIN_AE18 -to fpga_ddr3_dq[17]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[17]
+set_location_assignment PIN_AG22 -to fpga_ddr3_dq[18]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[18]
+set_location_assignment PIN_AK22 -to fpga_ddr3_dq[19]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[19]
+set_location_assignment PIN_AG16 -to fpga_ddr3_dq[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[2]
+set_location_assignment PIN_AF21 -to fpga_ddr3_dq[20]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[20]
+set_location_assignment PIN_AF20 -to fpga_ddr3_dq[21]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[21]
+set_location_assignment PIN_AH23 -to fpga_ddr3_dq[22]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[22]
+set_location_assignment PIN_AK24 -to fpga_ddr3_dq[23]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[23]
+set_location_assignment PIN_AF24 -to fpga_ddr3_dq[24]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[24]
+set_location_assignment PIN_AF23 -to fpga_ddr3_dq[25]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[25]
+set_location_assignment PIN_AJ24 -to fpga_ddr3_dq[26]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[26]
+set_location_assignment PIN_AK26 -to fpga_ddr3_dq[27]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[27]
+set_location_assignment PIN_AE23 -to fpga_ddr3_dq[28]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[28]
+set_location_assignment PIN_AE22 -to fpga_ddr3_dq[29]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[29]
+set_location_assignment PIN_AF16 -to fpga_ddr3_dq[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[3]
+set_location_assignment PIN_AG25 -to fpga_ddr3_dq[30]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[30]
+set_location_assignment PIN_AK27 -to fpga_ddr3_dq[31]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[31]
+set_location_assignment PIN_AH20 -to fpga_ddr3_dq[4]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[4]
+set_location_assignment PIN_AG21 -to fpga_ddr3_dq[5]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[5]
+set_location_assignment PIN_AJ16 -to fpga_ddr3_dq[6]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[6]
+set_location_assignment PIN_AH18 -to fpga_ddr3_dq[7]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[7]
+set_location_assignment PIN_AK18 -to fpga_ddr3_dq[8]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[8]
+set_location_assignment PIN_AJ17 -to fpga_ddr3_dq[9]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_dq[9]
+set_location_assignment PIN_W16 -to fpga_ddr3_dqs_n[0]
+#set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to fpga_ddr3_dqs_n[0]
+set_location_assignment PIN_W17 -to fpga_ddr3_dqs_n[1]
+#set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to fpga_ddr3_dqs_n[1]
+set_location_assignment PIN_AA18 -to fpga_ddr3_dqs_n[2]
+#set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to fpga_ddr3_dqs_n[2]
+set_location_assignment PIN_AD19 -to fpga_ddr3_dqs_n[3]
+#set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to fpga_ddr3_dqs_n[3]
+set_location_assignment PIN_V16 -to fpga_ddr3_dqs[0]
+#set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to fpga_ddr3_dqs[0]
+set_location_assignment PIN_V17 -to fpga_ddr3_dqs[1]
+#set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to fpga_ddr3_dqs[1]
+set_location_assignment PIN_Y17 -to fpga_ddr3_dqs[2]
+#set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to fpga_ddr3_dqs[2]
+set_location_assignment PIN_AC20 -to fpga_ddr3_dqs[3]
+#set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to fpga_ddr3_dqs[3]
+set_location_assignment PIN_AG17 -to fpga_ddr3_oct_rzqin
+set_instance_assignment -name IO_STANDARD 1.5V -to fpga_ddr3_oct_rzqin
+set_location_assignment PIN_AE16 -to fpga_ddr3_odt
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_odt
+set_location_assignment PIN_AH8 -to fpga_ddr3_ras_n
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_ras_n
+set_location_assignment PIN_AK21 -to fpga_ddr3_reset_n
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_reset_n
+set_location_assignment PIN_AJ6 -to fpga_ddr3_we_n
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to fpga_ddr3_we_n
+set_location_assignment PIN_AD27 -to fpga_rst_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to fpga_rst_n
+set_location_assignment PIN_P9 -to gxb_ref_clk
+set_instance_assignment -name IO_STANDARD 1.8V -to gxb_ref_clk
+set_location_assignment PIN_P8 -to gxb_ref_clk_n
+set_instance_assignment -name IO_STANDARD 1.8V -to gxb_ref_clk_n
+set_location_assignment PIN_AE2 -to gxb_rx[0]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[0]
+set_location_assignment PIN_AE1 -to gxb_rx[0]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[0]_n
+set_location_assignment PIN_AC2 -to gxb_rx[1]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[1]
+set_location_assignment PIN_AC1 -to gxb_rx[1]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[1]_n
+set_location_assignment PIN_AA2 -to gxb_rx[2]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[2]
+set_location_assignment PIN_AA1 -to gxb_rx[2]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[2]_n
+set_location_assignment PIN_W2 -to gxb_rx[3]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[3]
+set_location_assignment PIN_W1 -to gxb_rx[3]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[3]_n
+set_location_assignment PIN_U2 -to gxb_rx[4]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[4]
+set_location_assignment PIN_U1 -to gxb_rx[4]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[4]_n
+set_location_assignment PIN_R2 -to gxb_rx[5]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[5]
+set_location_assignment PIN_R1 -to gxb_rx[5]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[5]_n
+set_location_assignment PIN_N2 -to gxb_rx[6]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[6]
+set_location_assignment PIN_N1 -to gxb_rx[6]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[6]_n
+set_location_assignment PIN_J2 -to gxb_rx[7]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[7]
+set_location_assignment PIN_J1 -to gxb_rx[7]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_rx[7]_n
+set_location_assignment PIN_AD4 -to gxb_tx[0]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[0]
+set_location_assignment PIN_AD3 -to gxb_tx[0]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[0]_n
+set_location_assignment PIN_AB4 -to gxb_tx[1]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[1]
+set_location_assignment PIN_AB3 -to gxb_tx[1]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[1]_n
+set_location_assignment PIN_Y4 -to gxb_tx[2]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[2]
+set_location_assignment PIN_Y3 -to gxb_tx[2]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[2]_n
+set_location_assignment PIN_V4 -to gxb_tx[3]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[3]
+set_location_assignment PIN_V3 -to gxb_tx[3]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[3]_n
+set_location_assignment PIN_T4 -to gxb_tx[4]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[4]
+set_location_assignment PIN_T3 -to gxb_tx[4]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[4]_n
+set_location_assignment PIN_P4 -to gxb_tx[5]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[5]
+set_location_assignment PIN_P3 -to gxb_tx[5]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[5]_n
+set_location_assignment PIN_M4 -to gxb_tx[6]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[6]
+set_location_assignment PIN_M3 -to gxb_tx[6]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[6]_n
+set_location_assignment PIN_H4 -to gxb_tx[7]
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[7]
+set_location_assignment PIN_H3 -to gxb_tx[7]_n
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to gxb_tx[7]_n
+set_location_assignment PIN_F26 -to hps_ddr3_mem_a[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[0] -tag __hps_sdram_p0
+set_location_assignment PIN_G30 -to hps_ddr3_mem_a[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[1] -tag __hps_sdram_p0
+set_location_assignment PIN_D29 -to hps_ddr3_mem_a[10]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[10] -tag __hps_sdram_p0
+set_location_assignment PIN_C30 -to hps_ddr3_mem_a[11]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[11] -tag __hps_sdram_p0
+set_location_assignment PIN_B30 -to hps_ddr3_mem_a[12]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[12] -tag __hps_sdram_p0
+set_location_assignment PIN_C29 -to hps_ddr3_mem_a[13]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[13] -tag __hps_sdram_p0
+set_location_assignment PIN_H25 -to hps_ddr3_mem_a[14]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[14] -tag __hps_sdram_p0
+set_location_assignment PIN_F28 -to hps_ddr3_mem_a[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[2] -tag __hps_sdram_p0
+set_location_assignment PIN_F30 -to hps_ddr3_mem_a[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[3] -tag __hps_sdram_p0
+set_location_assignment PIN_J25 -to hps_ddr3_mem_a[4]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[4] -tag __hps_sdram_p0
+set_location_assignment PIN_J27 -to hps_ddr3_mem_a[5]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[5] -tag __hps_sdram_p0
+set_location_assignment PIN_F29 -to hps_ddr3_mem_a[6]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[6] -tag __hps_sdram_p0
+set_location_assignment PIN_E28 -to hps_ddr3_mem_a[7]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[7] -tag __hps_sdram_p0
+set_location_assignment PIN_H27 -to hps_ddr3_mem_a[8]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[8] -tag __hps_sdram_p0
+set_location_assignment PIN_G26 -to hps_ddr3_mem_a[9]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_a[9] -tag __hps_sdram_p0
+set_location_assignment PIN_E29 -to hps_ddr3_mem_ba[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_ba[0] -tag __hps_sdram_p0
+set_location_assignment PIN_J24 -to hps_ddr3_mem_ba[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_ba[1] -tag __hps_sdram_p0
+set_location_assignment PIN_J23 -to hps_ddr3_mem_ba[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_ba[2] -tag __hps_sdram_p0
+set_location_assignment PIN_D30 -to hps_ddr3_mem_cas_n
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_cas_n -tag __hps_sdram_p0
+set_location_assignment PIN_M23 -to hps_ddr3_mem_ck
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to hps_ddr3_mem_ck -tag __hps_sdram_p0
+set_location_assignment PIN_L23 -to hps_ddr3_mem_ck_n
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to hps_ddr3_mem_ck_n -tag __hps_sdram_p0
+set_location_assignment PIN_L29 -to hps_ddr3_mem_cke
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_cke -tag __hps_sdram_p0
+set_location_assignment PIN_H24 -to hps_ddr3_mem_cs_n
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_cs_n -tag __hps_sdram_p0
+set_location_assignment PIN_K28 -to hps_ddr3_mem_dm[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dm[0] -tag __hps_sdram_p0
+set_location_assignment PIN_M28 -to hps_ddr3_mem_dm[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dm[1] -tag __hps_sdram_p0
+set_location_assignment PIN_R28 -to hps_ddr3_mem_dm[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dm[2] -tag __hps_sdram_p0
+set_location_assignment PIN_W30 -to hps_ddr3_mem_dm[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dm[3] -tag __hps_sdram_p0
+set_location_assignment PIN_K23 -to hps_ddr3_mem_dq[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[0] -tag __hps_sdram_p0
+set_location_assignment PIN_K22 -to hps_ddr3_mem_dq[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[1] -tag __hps_sdram_p0
+set_location_assignment PIN_K29 -to hps_ddr3_mem_dq[10]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[10] -tag __hps_sdram_p0
+set_location_assignment PIN_K27 -to hps_ddr3_mem_dq[11]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[11] -tag __hps_sdram_p0
+set_location_assignment PIN_M26 -to hps_ddr3_mem_dq[12]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[12] -tag __hps_sdram_p0
+set_location_assignment PIN_M27 -to hps_ddr3_mem_dq[13]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[13] -tag __hps_sdram_p0
+set_location_assignment PIN_L28 -to hps_ddr3_mem_dq[14]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[14] -tag __hps_sdram_p0
+set_location_assignment PIN_M30 -to hps_ddr3_mem_dq[15]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[15] -tag __hps_sdram_p0
+set_location_assignment PIN_U26 -to hps_ddr3_mem_dq[16]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[16] -tag __hps_sdram_p0
+set_location_assignment PIN_T26 -to hps_ddr3_mem_dq[17]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[17] -tag __hps_sdram_p0
+set_location_assignment PIN_N29 -to hps_ddr3_mem_dq[18]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[18] -tag __hps_sdram_p0
+set_location_assignment PIN_N28 -to hps_ddr3_mem_dq[19]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[19] -tag __hps_sdram_p0
+set_location_assignment PIN_H30 -to hps_ddr3_mem_dq[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[2] -tag __hps_sdram_p0
+set_location_assignment PIN_P26 -to hps_ddr3_mem_dq[20]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[20] -tag __hps_sdram_p0
+set_location_assignment PIN_P27 -to hps_ddr3_mem_dq[21]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[21] -tag __hps_sdram_p0
+set_location_assignment PIN_N27 -to hps_ddr3_mem_dq[22]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[22] -tag __hps_sdram_p0
+set_location_assignment PIN_R29 -to hps_ddr3_mem_dq[23]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[23] -tag __hps_sdram_p0
+set_location_assignment PIN_P24 -to hps_ddr3_mem_dq[24]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[24] -tag __hps_sdram_p0
+set_location_assignment PIN_P25 -to hps_ddr3_mem_dq[25]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[25] -tag __hps_sdram_p0
+set_location_assignment PIN_T29 -to hps_ddr3_mem_dq[26]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[26] -tag __hps_sdram_p0
+set_location_assignment PIN_T28 -to hps_ddr3_mem_dq[27]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[27] -tag __hps_sdram_p0
+set_location_assignment PIN_R27 -to hps_ddr3_mem_dq[28]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[28] -tag __hps_sdram_p0
+set_location_assignment PIN_R26 -to hps_ddr3_mem_dq[29]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[29] -tag __hps_sdram_p0
+set_location_assignment PIN_G28 -to hps_ddr3_mem_dq[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[3] -tag __hps_sdram_p0
+set_location_assignment PIN_V30 -to hps_ddr3_mem_dq[30]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[30] -tag __hps_sdram_p0
+set_location_assignment PIN_W29 -to hps_ddr3_mem_dq[31]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[31] -tag __hps_sdram_p0
+set_location_assignment PIN_L25 -to hps_ddr3_mem_dq[4]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[4] -tag __hps_sdram_p0
+set_location_assignment PIN_L24 -to hps_ddr3_mem_dq[5]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[5] -tag __hps_sdram_p0
+set_location_assignment PIN_J30 -to hps_ddr3_mem_dq[6]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[6] -tag __hps_sdram_p0
+set_location_assignment PIN_J29 -to hps_ddr3_mem_dq[7]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[7] -tag __hps_sdram_p0
+set_location_assignment PIN_K26 -to hps_ddr3_mem_dq[8]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[8] -tag __hps_sdram_p0
+set_location_assignment PIN_L26 -to hps_ddr3_mem_dq[9]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_dq[9] -tag __hps_sdram_p0
+set_location_assignment PIN_M19 -to hps_ddr3_mem_dqs_n[0]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to hps_ddr3_mem_dqs_n[0] -tag __hps_sdram_p0
+set_location_assignment PIN_N24 -to hps_ddr3_mem_dqs_n[1]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to hps_ddr3_mem_dqs_n[1] -tag __hps_sdram_p0
+set_location_assignment PIN_R18 -to hps_ddr3_mem_dqs_n[2]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to hps_ddr3_mem_dqs_n[2] -tag __hps_sdram_p0
+set_location_assignment PIN_R21 -to hps_ddr3_mem_dqs_n[3]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to hps_ddr3_mem_dqs_n[3] -tag __hps_sdram_p0
+set_location_assignment PIN_N18 -to hps_ddr3_mem_dqs[0]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to hps_ddr3_mem_dqs[0] -tag __hps_sdram_p0
+set_location_assignment PIN_N25 -to hps_ddr3_mem_dqs[1]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to hps_ddr3_mem_dqs[1] -tag __hps_sdram_p0
+set_location_assignment PIN_R19 -to hps_ddr3_mem_dqs[2]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to hps_ddr3_mem_dqs[2] -tag __hps_sdram_p0
+set_location_assignment PIN_R22 -to hps_ddr3_mem_dqs[3]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to hps_ddr3_mem_dqs[3] -tag __hps_sdram_p0
+set_location_assignment PIN_D27 -to hps_ddr3_mem_oct_rzqin
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_oct_rzqin -tag __hps_sdram_p0
+set_location_assignment PIN_H28 -to hps_ddr3_mem_odt
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_odt -tag __hps_sdram_p0
+set_location_assignment PIN_E27 -to hps_ddr3_mem_ras_n
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_ras_n -tag __hps_sdram_p0
+set_location_assignment PIN_P30 -to hps_ddr3_mem_reset_n
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_reset_n -tag __hps_sdram_p0
+set_location_assignment PIN_C28 -to hps_ddr3_mem_we_n
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_ddr3_mem_we_n -tag __hps_sdram_p0
+set_location_assignment PIN_B21 -to hps_emac1_MDC
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_emac1_MDC
+set_location_assignment PIN_E21 -to hps_emac1_MDIO
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_emac1_MDIO
+set_location_assignment PIN_G20 -to hps_emac1_RX_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_emac1_RX_CLK
+set_location_assignment PIN_K17 -to hps_emac1_RX_CTL
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_emac1_RX_CTL
+set_location_assignment PIN_A21 -to hps_emac1_RXD[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_emac1_RXD[0]
+set_location_assignment PIN_B20 -to hps_emac1_RXD[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_emac1_RXD[1]
+set_location_assignment PIN_B18 -to hps_emac1_RXD[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_emac1_RXD[2]
+set_location_assignment PIN_D21 -to hps_emac1_RXD[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_emac1_RXD[3]
+set_location_assignment PIN_H19 -to hps_emac1_TX_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_emac1_TX_CLK
+set_location_assignment PIN_A20 -to hps_emac1_TX_CTL
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_emac1_TX_CTL
+set_location_assignment PIN_F20 -to hps_emac1_TXD[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_emac1_TXD[0]
+set_location_assignment PIN_J19 -to hps_emac1_TXD[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_emac1_TXD[1]
+set_location_assignment PIN_F21 -to hps_emac1_TXD[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_emac1_TXD[2]
+set_location_assignment PIN_F19 -to hps_emac1_TXD[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_emac1_TXD[3]
+set_location_assignment PIN_T21 -to hps_gpio_GPI10
+set_instance_assignment -name IO_STANDARD 1.5V -to hps_gpio_GPI10
+set_location_assignment PIN_U20 -to hps_gpio_GPI11
+set_instance_assignment -name IO_STANDARD 1.5V -to hps_gpio_GPI11
+set_location_assignment PIN_N30 -to hps_gpio_GPI4
+set_instance_assignment -name IO_STANDARD 1.5V -to hps_gpio_GPI4
+set_location_assignment PIN_P29 -to hps_gpio_GPI5
+set_instance_assignment -name IO_STANDARD 1.5V -to hps_gpio_GPI5
+set_location_assignment PIN_P22 -to hps_gpio_GPI6
+set_instance_assignment -name IO_STANDARD 1.5V -to hps_gpio_GPI6
+set_location_assignment PIN_V20 -to hps_gpio_GPI7
+set_instance_assignment -name IO_STANDARD 1.5V -to hps_gpio_GPI7
+set_location_assignment PIN_T30 -to hps_gpio_GPI8
+set_instance_assignment -name IO_STANDARD 1.5V -to hps_gpio_GPI8
+set_location_assignment PIN_U28 -to hps_gpio_GPI9
+set_instance_assignment -name IO_STANDARD 1.5V -to hps_gpio_GPI9
+set_location_assignment PIN_F16 -to hps_gpio_GPIO0
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_gpio_GPIO0
+set_location_assignment PIN_C19 -to hps_gpio_GPIO35
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_gpio_GPIO35
+set_location_assignment PIN_H17 -to hps_gpio_GPIO40
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_gpio_GPIO40
+set_location_assignment PIN_B26 -to hps_gpio_GPIO48
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_gpio_GPIO48
+set_location_assignment PIN_A24 -to hps_gpio_GPIO53
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_gpio_GPIO53
+set_location_assignment PIN_G21 -to hps_gpio_GPIO54
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_gpio_GPIO54
+set_location_assignment PIN_C24 -to hps_gpio_GPIO55
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_gpio_GPIO55
+set_location_assignment PIN_E23 -to hps_gpio_GPIO56
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_gpio_GPIO56
+set_location_assignment PIN_B22 -to hps_gpio_GPIO61
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_gpio_GPIO61
+set_location_assignment PIN_G22 -to hps_gpio_GPIO62
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_gpio_GPIO62
+set_location_assignment PIN_B15 -to hps_gpio_GPIO9
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_gpio_GPIO9
+set_location_assignment PIN_H23 -to hps_i2c1_SCL
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_i2c1_SCL
+set_location_assignment PIN_A25 -to hps_i2c1_SDA
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_i2c1_SDA
+set_location_assignment PIN_D19 -to hps_qspi_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_qspi_CLK
+set_location_assignment PIN_C20 -to hps_qspi_IO[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_qspi_IO[0]
+set_location_assignment PIN_H18 -to hps_qspi_IO[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_qspi_IO[1]
+set_location_assignment PIN_A19 -to hps_qspi_IO[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_qspi_IO[2]
+set_location_assignment PIN_E19 -to hps_qspi_IO[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_qspi_IO[3]
+set_location_assignment PIN_A18 -to hps_qspi_SS0
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_qspi_SS0
+set_location_assignment PIN_A16 -to hps_sdio_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_sdio_CLK
+set_location_assignment PIN_F18 -to hps_sdio_CMD
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_sdio_CMD
+set_location_assignment PIN_G18 -to hps_sdio_D[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_sdio_D[0]
+set_location_assignment PIN_C17 -to hps_sdio_D[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_sdio_D[1]
+set_location_assignment PIN_D17 -to hps_sdio_D[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_sdio_D[2]
+set_location_assignment PIN_B16 -to hps_sdio_D[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_sdio_D[3]
+set_location_assignment PIN_A23 -to hps_spim0_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_spim0_CLK
+set_location_assignment PIN_B23 -to hps_spim0_MISO
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_spim0_MISO
+set_location_assignment PIN_C22 -to hps_spim0_MOSI
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_spim0_MOSI
+set_location_assignment PIN_H20 -to hps_spim0_SS0
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_spim0_SS0
+set_location_assignment PIN_C23 -to hps_spim1_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_spim1_CLK
+set_location_assignment PIN_E24 -to hps_spim1_MISO
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_spim1_MISO
+set_location_assignment PIN_D22 -to hps_spim1_MOSI
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_spim1_MOSI
+set_location_assignment PIN_D24 -to hps_spim1_SS0
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_spim1_SS0
+set_location_assignment PIN_B25 -to hps_uart0_RX
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_uart0_RX
+set_location_assignment PIN_C25 -to hps_uart0_TX
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_uart0_TX
+set_location_assignment PIN_N16 -to hps_usb1_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_usb1_CLK
+set_location_assignment PIN_E14 -to hps_usb1_DIR
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_usb1_DIR
+set_location_assignment PIN_E16 -to hps_usb1_D[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_usb1_D[0]
+set_location_assignment PIN_G16 -to hps_usb1_D[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_usb1_D[1]
+set_location_assignment PIN_D16 -to hps_usb1_D[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_usb1_D[2]
+set_location_assignment PIN_D14 -to hps_usb1_D[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_usb1_D[3]
+set_location_assignment PIN_A15 -to hps_usb1_D[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_usb1_D[4]
+set_location_assignment PIN_C14 -to hps_usb1_D[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_usb1_D[5]
+set_location_assignment PIN_D15 -to hps_usb1_D[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_usb1_D[6]
+set_location_assignment PIN_M17 -to hps_usb1_D[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_usb1_D[7]
+set_location_assignment PIN_A14 -to hps_usb1_NXT
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_usb1_NXT
+set_location_assignment PIN_C15 -to hps_usb1_STP
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hps_usb1_STP
+set_location_assignment PIN_J14 -to hsmc_clkin0
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_clkin0
+set_location_assignment PIN_AA26 -to hsmc_clkin1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_clkin1
+set_location_assignment PIN_AB27 -to hsmc_clkin1_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_clkin1_n
+set_location_assignment PIN_H15 -to hsmc_clkin2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_clkin2
+set_location_assignment PIN_G15 -to hsmc_clkin2_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_clkin2_n
+set_location_assignment PIN_AD29 -to hsmc_clkout0
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_clkout0
+set_location_assignment PIN_E7 -to hsmc_clkout1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_clkout1
+set_location_assignment PIN_E6 -to hsmc_clkout1_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_clkout1_n
+set_location_assignment PIN_A11 -to hsmc_clkout2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_clkout2
+set_location_assignment PIN_A10 -to hsmc_clkout2_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_clkout2_n
+set_location_assignment PIN_C10 -to hsmc_d[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_d[0]
+set_location_assignment PIN_H13 -to hsmc_d[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_d[1]
+set_location_assignment PIN_C9 -to hsmc_d[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_d[2]
+set_location_assignment PIN_H12 -to hsmc_d[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_d[3]
+set_location_assignment PIN_AA28 -to hsmc_i2c_scl
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_i2c_scl
+set_location_assignment PIN_AE29 -to hsmc_i2c_sda
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_i2c_sda
+set_location_assignment PIN_G12 -to hsmc_rx[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[0]
+set_location_assignment PIN_G11 -to hsmc_rx[0]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[0]_n
+set_location_assignment PIN_K12 -to hsmc_rx[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[1]
+set_location_assignment PIN_J12 -to hsmc_rx[1]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[1]_n
+set_location_assignment PIN_E9 -to hsmc_rx[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[10]
+set_location_assignment PIN_D9 -to hsmc_rx[10]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[10]_n
+set_location_assignment PIN_E12 -to hsmc_rx[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[11]
+set_location_assignment PIN_D12 -to hsmc_rx[11]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[11]_n
+set_location_assignment PIN_D11 -to hsmc_rx[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[12]
+set_location_assignment PIN_D10 -to hsmc_rx[12]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[12]_n
+set_location_assignment PIN_C13 -to hsmc_rx[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[13]
+set_location_assignment PIN_B12 -to hsmc_rx[13]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[13]_n
+set_location_assignment PIN_F13 -to hsmc_rx[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[14]
+set_location_assignment PIN_E13 -to hsmc_rx[14]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[14]_n
+set_location_assignment PIN_H14 -to hsmc_rx[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[15]
+set_location_assignment PIN_G13 -to hsmc_rx[15]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[15]_n
+set_location_assignment PIN_F15 -to hsmc_rx[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[16]
+set_location_assignment PIN_F14 -to hsmc_rx[16]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[16]_n
+set_location_assignment PIN_G10 -to hsmc_rx[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[2]
+set_location_assignment PIN_F10 -to hsmc_rx[2]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[2]_n
+set_location_assignment PIN_J10 -to hsmc_rx[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[3]
+set_location_assignment PIN_J9 -to hsmc_rx[3]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[3]_n
+set_location_assignment PIN_K7 -to hsmc_rx[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[4]
+set_location_assignment PIN_K8 -to hsmc_rx[4]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[4]_n
+set_location_assignment PIN_J7 -to hsmc_rx[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[5]
+set_location_assignment PIN_H7 -to hsmc_rx[5]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[5]_n
+set_location_assignment PIN_H8 -to hsmc_rx[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[6]
+set_location_assignment PIN_G8 -to hsmc_rx[6]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[6]_n
+set_location_assignment PIN_F9 -to hsmc_rx[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[7]
+set_location_assignment PIN_F8 -to hsmc_rx[7]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[7]_n
+set_location_assignment PIN_F11 -to hsmc_rx[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[8]
+set_location_assignment PIN_E11 -to hsmc_rx[8]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[8]_n
+set_location_assignment PIN_B6 -to hsmc_rx[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[9]
+set_location_assignment PIN_B5 -to hsmc_rx[9]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_rx[9]_n
+set_location_assignment PIN_A9 -to hsmc_tx[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[0]
+set_location_assignment PIN_A8 -to hsmc_tx[0]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[0]_n
+set_location_assignment PIN_E8 -to hsmc_tx[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[1]
+set_location_assignment PIN_D7 -to hsmc_tx[1]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[1]_n
+set_location_assignment PIN_B2 -to hsmc_tx[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[10]
+set_location_assignment PIN_B1 -to hsmc_tx[10]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[10]_n
+set_location_assignment PIN_A4 -to hsmc_tx[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[11]
+set_location_assignment PIN_A3 -to hsmc_tx[11]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[11]_n
+set_location_assignment PIN_A6 -to hsmc_tx[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[12]
+set_location_assignment PIN_A5 -to hsmc_tx[12]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[12]_n
+set_location_assignment PIN_C7 -to hsmc_tx[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[13]
+set_location_assignment PIN_B7 -to hsmc_tx[13]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[13]_n
+set_location_assignment PIN_C8 -to hsmc_tx[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[14]
+set_location_assignment PIN_B8 -to hsmc_tx[14]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[14]_n
+set_location_assignment PIN_C12 -to hsmc_tx[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[15]
+set_location_assignment PIN_B11 -to hsmc_tx[15]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[15]_n
+set_location_assignment PIN_B13 -to hsmc_tx[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[16]
+set_location_assignment PIN_A13 -to hsmc_tx[16]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[16]_n
+set_location_assignment PIN_G7 -to hsmc_tx[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[2]
+set_location_assignment PIN_F6 -to hsmc_tx[2]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[2]_n
+set_location_assignment PIN_D6 -to hsmc_tx[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[3]
+set_location_assignment PIN_C5 -to hsmc_tx[3]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[3]_n
+set_location_assignment PIN_D5 -to hsmc_tx[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[4]
+set_location_assignment PIN_C4 -to hsmc_tx[4]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[4]_n
+set_location_assignment PIN_E3 -to hsmc_tx[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[5]
+set_location_assignment PIN_E2 -to hsmc_tx[5]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[5]_n
+set_location_assignment PIN_E4 -to hsmc_tx[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[6]
+set_location_assignment PIN_D4 -to hsmc_tx[6]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[6]_n
+set_location_assignment PIN_C3 -to hsmc_tx[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[7]
+set_location_assignment PIN_B3 -to hsmc_tx[7]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[7]_n
+set_location_assignment PIN_E1 -to hsmc_tx[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[8]
+set_location_assignment PIN_D1 -to hsmc_tx[8]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[8]_n
+set_location_assignment PIN_D2 -to hsmc_tx[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[9]
+set_location_assignment PIN_C20 -to hsmc_tx[9]_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hsmc_tx[9]_n
+set_location_assignment PIN_AH2 -to irda_rx
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to irda_rx
+set_location_assignment PIN_K14 -to si5338_clk0
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to si5338_clk0
+set_location_assignment PIN_AF14 -to si5338_clk1
+set_instance_assignment -name IO_STANDARD 1.5V -to si5338_clk1
+set_location_assignment PIN_AA16 -to si5338_clk2
+set_instance_assignment -name IO_STANDARD 1.5V -to si5338_clk2
+set_location_assignment PIN_AE26 -to si5338_i2c_scl
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to si5338_i2c_scl
+set_location_assignment PIN_AJ29 -to si5338_i2c_sda
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to si5338_i2c_sda
+set_location_assignment PIN_AF9 -to temp_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to temp_clk
+set_location_assignment PIN_AF8 -to temp_cs_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to temp_cs_n
+set_location_assignment PIN_AG7 -to temp_miso
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to temp_miso
+set_location_assignment PIN_AG1 -to temp_mosi
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to temp_mosi
+set_location_assignment PIN_W25 -to user_dipsw_fpga[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to user_dipsw_fpga[0]
+set_location_assignment PIN_V25 -to user_dipsw_fpga[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to user_dipsw_fpga[1]
+set_location_assignment PIN_AC28 -to user_dipsw_fpga[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to user_dipsw_fpga[2]
+set_location_assignment PIN_AC29 -to user_dipsw_fpga[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to user_dipsw_fpga[3]
+set_location_assignment PIN_AF10 -to user_led_fpga[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to user_led_fpga[0]
+set_location_assignment PIN_AD10 -to user_led_fpga[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to user_led_fpga[1]
+set_location_assignment PIN_AE11 -to user_led_fpga[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to user_led_fpga[2]
+set_location_assignment PIN_AD7 -to user_led_fpga[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to user_led_fpga[3]
+set_location_assignment PIN_AE9 -to user_pb_fpga[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to user_pb_fpga[0]
+set_location_assignment PIN_AE12 -to user_pb_fpga[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to user_pb_fpga[1]
+set_location_assignment PIN_AD9 -to user_pb_fpga[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to user_pb_fpga[2]
+set_location_assignment PIN_AD11 -to user_pb_fpga[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to user_pb_fpga[3]
+set_location_assignment PIN_AE28 -to vga_b[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_b[0]
+set_location_assignment PIN_Y23 -to vga_b[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_b[1]
+set_location_assignment PIN_Y24 -to vga_b[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_b[2]
+set_location_assignment PIN_AG28 -to vga_b[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_b[3]
+set_location_assignment PIN_AF28 -to vga_b[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_b[4]
+set_location_assignment PIN_V23 -to vga_b[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_b[5]
+set_location_assignment PIN_W24 -to vga_b[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_b[6]
+set_location_assignment PIN_AF29 -to vga_b[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_b[7]
+set_location_assignment PIN_AH3 -to vga_blank_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_blank_n
+set_location_assignment PIN_W20 -to vga_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_clk
+set_location_assignment PIN_Y21 -to vga_g[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_g[0]
+set_location_assignment PIN_AA25 -to vga_g[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_g[1]
+set_location_assignment PIN_AB26 -to vga_g[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_g[2]
+set_location_assignment PIN_AB22 -to vga_g[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_g[3]
+set_location_assignment PIN_AB23 -to vga_g[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_g[4]
+set_location_assignment PIN_AA24 -to vga_g[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_g[5]
+set_location_assignment PIN_AB25 -to vga_g[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_g[6]
+set_location_assignment PIN_AE27 -to vga_g[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_g[7]
+set_location_assignment PIN_AD12 -to vga_hsync
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_hsync
+set_location_assignment PIN_AG5 -to vga_r[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_r[0]
+set_location_assignment PIN_AA12 -to vga_r[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_r[1]
+set_location_assignment PIN_AB12 -to vga_r[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_r[2]
+set_location_assignment PIN_AF6 -to vga_r[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_r[3]
+set_location_assignment PIN_AG6 -to vga_r[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_r[4]
+set_location_assignment PIN_AJ2 -to vga_r[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_r[5]
+set_location_assignment PIN_AH5 -to vga_r[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_r[6]
+set_location_assignment PIN_AJ1 -to vga_r[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_r[7]
+set_location_assignment PIN_AG2 -to vga_sync_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_sync_n
+set_location_assignment PIN_AC12 -to vga_vsync
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to vga_vsync
+
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[0] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[0] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[1] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[1] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[2] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[2] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[3] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[3] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[4] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[4] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[5] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[5] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[6] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[6] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[7] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[7] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[8] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[8] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[9] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[9] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[10] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[10] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[11] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[11] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[12] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[12] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[13] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[13] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[14] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[14] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[15] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[15] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[16] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[16] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[17] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[17] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[18] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[18] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[19] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[19] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[20] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[20] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[21] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[21] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[22] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[22] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[23] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[23] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[24] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[24] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[25] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[25] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[26] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[26] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[27] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[27] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[28] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[28] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[29] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[29] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[30] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[30] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[31] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dq[31] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs[0] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs[0] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs[1] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs[1] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs[2] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs[2] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs[3] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs[3] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs_n[0] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs_n[0] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs_n[1] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs_n[1] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs_n[2] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs_n[2] -tag __hps_sdram_p0
+set_instance_assignment -name INPUT_TERMINATION "PARALLEL 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs_n[3] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dqs_n[3] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITHOUT CALIBRATION" -to hps_ddr3_mem_ck -tag __hps_sdram_p0
+set_instance_assignment -name D5_DELAY 2 -to hps_ddr3_mem_ck -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITHOUT CALIBRATION" -to hps_ddr3_mem_ck_n -tag __hps_sdram_p0
+set_instance_assignment -name D5_DELAY 2 -to hps_ddr3_mem_ck_n -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[0] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[10] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[11] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[12] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[13] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[14] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[1] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[2] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[3] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[4] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[5] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[6] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[7] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[8] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_a[9] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_ba[0] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_ba[1] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_ba[2] -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_cas_n -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_cke -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_cs_n -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_odt -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_ras_n -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_we_n -tag __hps_sdram_p0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_ddr3_mem_reset_n -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dm[0] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dm[1] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dm[2] -tag __hps_sdram_p0
+set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to hps_ddr3_mem_dm[3] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[0] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[1] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[2] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[3] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[4] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[5] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[6] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[7] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[8] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[9] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[10] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[11] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[12] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[13] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[14] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[15] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[16] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[17] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[18] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[19] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[20] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[21] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[22] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[23] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[24] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[25] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[26] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[27] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[28] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[29] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[30] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dq[31] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dm[0] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dm[1] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dm[2] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dm[3] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dqs[0] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dqs[1] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dqs[2] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dqs[3] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dqs_n[0] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dqs_n[1] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dqs_n[2] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_dqs_n[3] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[0] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[10] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[11] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[12] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[13] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[14] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[1] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[2] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[3] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[4] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[5] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[6] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[7] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[8] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_a[9] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_ba[0] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_ba[1] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_ba[2] -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_cas_n -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_cke -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_cs_n -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_odt -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_ras_n -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_we_n -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_reset_n -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_ck -tag __hps_sdram_p0
+set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to hps_ddr3_mem_ck_n -tag __hps_sdram_p0
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|ureset|phy_reset_mem_stable_n -tag __hps_sdram_p0
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|ureset|phy_reset_n -tag __hps_sdram_p0
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[0].read_capture_clk_buffer -tag __hps_sdram_p0
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uread_datapath|reset_n_fifo_write_side[0] -tag __hps_sdram_p0
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uread_datapath|reset_n_fifo_wraddress[0] -tag __hps_sdram_p0
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[1].read_capture_clk_buffer -tag __hps_sdram_p0
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uread_datapath|reset_n_fifo_write_side[1] -tag __hps_sdram_p0
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uread_datapath|reset_n_fifo_wraddress[1] -tag __hps_sdram_p0
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[2].read_capture_clk_buffer -tag __hps_sdram_p0
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uread_datapath|reset_n_fifo_write_side[2] -tag __hps_sdram_p0
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uread_datapath|reset_n_fifo_wraddress[2] -tag __hps_sdram_p0
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[3].read_capture_clk_buffer -tag __hps_sdram_p0
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uread_datapath|reset_n_fifo_write_side[3] -tag __hps_sdram_p0
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to u0|hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uread_datapath|reset_n_fifo_wraddress[3] -tag __hps_sdram_p0
+set_instance_assignment -name ENABLE_BENEFICIAL_SKEW_OPTIMIZATION_FOR_NON_GLOBAL_CLOCKS ON -to u0|hps_0|hps_io|border|hps_sdram_inst -tag __hps_sdram_p0
+set_instance_assignment -name PLL_COMPENSATION_MODE DIRECT -to u0|hps_0|hps_io|border|hps_sdram_inst|pll0|fbout -tag __hps_sdram_p0
+set_global_assignment -name USE_DLL_FREQUENCY_FOR_DQS_DELAY_CHAIN ON
+set_global_assignment -name UNIPHY_SEQUENCER_DQS_CONFIG_ENABLE ON
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name ECO_REGENERATE_REPORT ON
+
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
